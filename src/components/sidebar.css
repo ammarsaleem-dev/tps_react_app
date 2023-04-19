@@ -1,0 +1,26 @@
+.sidebar a {
+    display: block;
+    padding: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: white;   
+}
+
+.sidebar a:hover:not(.active){
+    background-color: #57C5B6;
+    color: black;
+    border-radius: 8px;
+    animation-name: hover-item;
+    animation-duration: 0.2s;
+}
+
+@keyframes hover-item {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.sidebar a.active{
+    background-color: #655DBB;
+    color: white;
+    border-radius: 8px;
+}
